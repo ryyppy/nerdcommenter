@@ -206,7 +206,7 @@ let s:delimiterMap = {
     \ 'jade': { 'left': '//-', 'leftAlt': '//' },
     \ 'java': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'javacc': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
-    \ 'javascript': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
+    \ 'javascript': { 'left': '// ', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'javascript.jquery': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'jess': { 'left': ';' },
     \ 'jgraph': { 'left': '(*', 'right': '*)' },
@@ -411,6 +411,8 @@ let g:NERDDelimiterMap = s:delimiterMap
 if exists("g:NERDCustomDelimiters")
     call extend(s:delimiterMap, g:NERDCustomDelimiters)
 endif
+
+
 
 " Section: Comment mapping functions, autocommands and commands {{{1
 " ============================================================================
